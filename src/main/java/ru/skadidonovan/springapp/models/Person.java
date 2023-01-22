@@ -1,6 +1,5 @@
 package ru.skadidonovan.springapp.models;
 
-import javax.validation.constraints.Email;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
@@ -16,7 +15,7 @@ public class Person {
     private int age;
 
     @NotEmpty(message = "Email should not be empty")
-    @Email(message = "Email should be valid")
+//  @Email(message = "Email should be valid")
     private String email;
 
     public Person() {
